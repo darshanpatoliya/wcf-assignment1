@@ -11,8 +11,8 @@ namespace Assignment1Client
         static void Main(string[] args)
         {
             Assignment1Reference.Assignment1ServiceClient client = new Assignment1Reference.Assignment1ServiceClient();
-            string choice = "";
-            while (!choice.Equals("5"))
+            string selection = "";
+            while (!selection.Equals("5"))
             {
                 Console.WriteLine("Assignment1");
                 Console.WriteLine("1. PrimeNumber");
@@ -23,9 +23,9 @@ namespace Assignment1Client
                 Console.WriteLine("6. Exit");
                 Console.WriteLine("Enter your choice: ");
 
-                choice = Console.ReadLine();
+                selection = Console.ReadLine();
 
-                switch (choice)
+                switch (selection)
                 {
                     case "1":
                         Console.WriteLine("Enter Number 1: ");
