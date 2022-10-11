@@ -1,0 +1,7 @@
+D:\Conestoga\Sem5\Distributed application\Assignments\Assignment1\wcf-assignment1\Assignment1\Assignment1\bin\Assignment1.dll.config
+D:\Conestoga\Sem5\Distributed application\Assignments\Assignment1\wcf-assignment1\Assignment1\Assignment1\bin\Assignment1.dll
+D:\Conestoga\Sem5\Distributed application\Assignments\Assignment1\wcf-assignment1\Assignment1\Assignment1\bin\Assignment1.pdb
+D:\Conestoga\Sem5\Distributed application\Assignments\Assignment1\wcf-assignment1\Assignment1\Assignment1\obj\Debug\Assignment1.csproj.AssemblyReference.cache
+D:\Conestoga\Sem5\Distributed application\Assignments\Assignment1\wcf-assignment1\Assignment1\Assignment1\obj\Debug\Assignment1.csproj.CoreCompileInputs.cache
+D:\Conestoga\Sem5\Distributed application\Assignments\Assignment1\wcf-assignment1\Assignment1\Assignment1\obj\Debug\Assignment1.dll
+D:\Conestoga\Sem5\Distributed application\Assignments\Assignment1\wcf-assignment1\Assignment1\Assignment1\obj\Debug\Assignment1.pdb
