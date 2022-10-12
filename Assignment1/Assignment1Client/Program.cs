@@ -57,7 +57,7 @@ namespace Assignment1Client
                         Console.WriteLine(result4);
                         break;
                     case "5":
-                        /*int i;
+                        int i;
                         int[] intArray = new int[5];
 
                         for (i = 0; i <= 4; i++)
@@ -67,14 +67,13 @@ namespace Assignment1Client
                         }
 
                         int[] resultArray = assignment1ServiceClient.sortFiveNumbers(intArray);
-                        Console.WriteLine("\n\n\nSorted Integer Array:\n");
 
+                        Console.WriteLine("\n\n\nSorted Integer Array:\n");
 
                         foreach (int a in intArray)
                         {
-                            Console.Write(a + "\t");
-                        }*/
-
+                            Console.Write(a + " ");
+                        }
 
                         break;
                     case "6":

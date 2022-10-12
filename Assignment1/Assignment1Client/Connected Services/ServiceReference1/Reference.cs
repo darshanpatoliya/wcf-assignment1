@@ -40,11 +40,10 @@ namespace Assignment1Client.ServiceReference1 {
         System.Threading.Tasks.Task<string> printHtmlAsync(string string1);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAssignment1Service/sortFiveNumbers", ReplyAction="http://tempuri.org/IAssignment1Service/sortFiveNumbersResponse")]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(object[]))]
-        object[] sortFiveNumbers(object[] intArray);
+        int[] sortFiveNumbers(int[] intArray);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAssignment1Service/sortFiveNumbers", ReplyAction="http://tempuri.org/IAssignment1Service/sortFiveNumbersResponse")]
-        System.Threading.Tasks.Task<object[]> sortFiveNumbersAsync(object[] intArray);
+        System.Threading.Tasks.Task<int[]> sortFiveNumbersAsync(int[] intArray);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -106,11 +105,11 @@ namespace Assignment1Client.ServiceReference1 {
             return base.Channel.printHtmlAsync(string1);
         }
         
-        public object[] sortFiveNumbers(object[] intArray) {
+        public int[] sortFiveNumbers(int[] intArray) {
             return base.Channel.sortFiveNumbers(intArray);
         }
         
-        public System.Threading.Tasks.Task<object[]> sortFiveNumbersAsync(object[] intArray) {
+        public System.Threading.Tasks.Task<int[]> sortFiveNumbersAsync(int[] intArray) {
             return base.Channel.sortFiveNumbersAsync(intArray);
         }
     }

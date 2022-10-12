@@ -60,14 +60,14 @@
   <xs:element name="sortFiveNumbers">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="intArray" nillable="true" type="q1:ArrayOfanyType" />
+        <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="intArray" nillable="true" type="q1:ArrayOfint" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="sortFiveNumbersResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="sortFiveNumbersResult" nillable="true" type="q2:ArrayOfanyType" />
+        <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="sortFiveNumbersResult" nillable="true" type="q2:ArrayOfint" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
