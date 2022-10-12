@@ -14,6 +14,14 @@ namespace Assignment1
     {
         [OperationContract]
         string primeCheck(int number);
+        [OperationContract]
+        int sumOfDigits(int number);
+        [OperationContract]
+        string reverseString(string word);
+        [OperationContract]
+        string printHtml(string string1);
+        [OperationContract]
+        int[] sortFiveNumbers(int[] intArray);
 
     }
 }

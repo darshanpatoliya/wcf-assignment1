@@ -33,5 +33,52 @@ namespace Assignment1
                 return "Number is not Prime";
             }
         }
+
+        public string printHtml(string string1)
+        {
+            var stringBuilder = new StringBuilder();
+            stringBuilder.Append("<html>");
+            stringBuilder.AppendLine("<"+ string1 +">");
+            stringBuilder.AppendLine("</html>");
+            //to get the html use
+            var formatedHtml = stringBuilder.ToString();
+            return formatedHtml;
+        }
+
+        public string reverseString(string word)
+        {
+            string rev;
+            rev = "";
+            // find string length
+            int len;
+            len = word.Length - 1;
+            while (len >= 0)
+            {
+                rev = rev + word[len];
+                len--;
+            }
+            return rev;
+        }
+
+        public int[] sortFiveNumbers(int[] intArray)
+        {
+            Array.Sort(intArray);
+            return intArray;
+        }
+
+
+
+        public int sumOfDigits(int n)
+        {
+            int sum = 0, m;
+            
+            while (n > 0)
+            {
+                m = n % 10;
+                sum = sum + m;
+                n = n / 10;
+            }
+            return sum;
+        }
     }
 }
