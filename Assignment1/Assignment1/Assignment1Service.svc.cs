@@ -34,16 +34,18 @@ namespace Assignment1
             }
         }
 
-        public string printHtml(string string1)
+        public string printHtml(string string1, string tag)
         {
             var stringBuilder = new StringBuilder();
-            stringBuilder.Append("<html>");
-            stringBuilder.AppendLine("<"+ string1 +">");
-            stringBuilder.AppendLine("</html>");
+            stringBuilder.Append("<"+tag+">");
+            stringBuilder.Append(string1);
+            stringBuilder.Append("</" + tag + ">");
             //to get the html use
             var formatedHtml = stringBuilder.ToString();
             return formatedHtml;
         }
+
+        
 
         public string reverseString(string word)
         {
@@ -60,13 +62,17 @@ namespace Assignment1
             return rev;
         }
 
-        public int[] sortFiveNumbers(int[] intArray)
+        public int[] sortFiveNumbersAsc(int[] intArray)
         {
             Array.Sort(intArray);
             return intArray;
         }
 
-
+        public int[] sortFiveNumbersDesc(int[] intArray)
+        {
+            Array.Reverse(intArray);
+            return intArray;
+        }
 
         public int sumOfDigits(int n)
         {

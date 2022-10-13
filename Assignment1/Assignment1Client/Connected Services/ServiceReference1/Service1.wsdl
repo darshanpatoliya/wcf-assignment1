@@ -31,11 +31,17 @@
   <wsdl:message name="IAssignment1Service_printHtml_OutputMessage">
     <wsdl:part name="parameters" element="tns:printHtmlResponse" />
   </wsdl:message>
-  <wsdl:message name="IAssignment1Service_sortFiveNumbers_InputMessage">
-    <wsdl:part name="parameters" element="tns:sortFiveNumbers" />
+  <wsdl:message name="IAssignment1Service_sortFiveNumbersAsc_InputMessage">
+    <wsdl:part name="parameters" element="tns:sortFiveNumbersAsc" />
   </wsdl:message>
-  <wsdl:message name="IAssignment1Service_sortFiveNumbers_OutputMessage">
-    <wsdl:part name="parameters" element="tns:sortFiveNumbersResponse" />
+  <wsdl:message name="IAssignment1Service_sortFiveNumbersAsc_OutputMessage">
+    <wsdl:part name="parameters" element="tns:sortFiveNumbersAscResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAssignment1Service_sortFiveNumbersDesc_InputMessage">
+    <wsdl:part name="parameters" element="tns:sortFiveNumbersDesc" />
+  </wsdl:message>
+  <wsdl:message name="IAssignment1Service_sortFiveNumbersDesc_OutputMessage">
+    <wsdl:part name="parameters" element="tns:sortFiveNumbersDescResponse" />
   </wsdl:message>
   <wsdl:portType name="IAssignment1Service">
     <wsdl:operation name="primeCheck">
@@ -54,9 +60,13 @@
       <wsdl:input wsaw:Action="http://tempuri.org/IAssignment1Service/printHtml" message="tns:IAssignment1Service_printHtml_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IAssignment1Service/printHtmlResponse" message="tns:IAssignment1Service_printHtml_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation name="sortFiveNumbers">
-      <wsdl:input wsaw:Action="http://tempuri.org/IAssignment1Service/sortFiveNumbers" message="tns:IAssignment1Service_sortFiveNumbers_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IAssignment1Service/sortFiveNumbersResponse" message="tns:IAssignment1Service_sortFiveNumbers_OutputMessage" />
+    <wsdl:operation name="sortFiveNumbersAsc">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAssignment1Service/sortFiveNumbersAsc" message="tns:IAssignment1Service_sortFiveNumbersAsc_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAssignment1Service/sortFiveNumbersAscResponse" message="tns:IAssignment1Service_sortFiveNumbersAsc_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="sortFiveNumbersDesc">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAssignment1Service/sortFiveNumbersDesc" message="tns:IAssignment1Service_sortFiveNumbersDesc_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAssignment1Service/sortFiveNumbersDescResponse" message="tns:IAssignment1Service_sortFiveNumbersDesc_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IAssignment1Service" type="tns:IAssignment1Service">
@@ -97,8 +107,17 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="sortFiveNumbers">
-      <soap:operation soapAction="http://tempuri.org/IAssignment1Service/sortFiveNumbers" style="document" />
+    <wsdl:operation name="sortFiveNumbersAsc">
+      <soap:operation soapAction="http://tempuri.org/IAssignment1Service/sortFiveNumbersAsc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sortFiveNumbersDesc">
+      <soap:operation soapAction="http://tempuri.org/IAssignment1Service/sortFiveNumbersDesc" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

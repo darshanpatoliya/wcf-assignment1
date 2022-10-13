@@ -34,16 +34,22 @@ namespace Assignment1Client.ServiceReference1 {
         System.Threading.Tasks.Task<string> reverseStringAsync(string word);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAssignment1Service/printHtml", ReplyAction="http://tempuri.org/IAssignment1Service/printHtmlResponse")]
-        string printHtml(string string1);
+        string printHtml(string string1, string tag);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAssignment1Service/printHtml", ReplyAction="http://tempuri.org/IAssignment1Service/printHtmlResponse")]
-        System.Threading.Tasks.Task<string> printHtmlAsync(string string1);
+        System.Threading.Tasks.Task<string> printHtmlAsync(string string1, string tag);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAssignment1Service/sortFiveNumbers", ReplyAction="http://tempuri.org/IAssignment1Service/sortFiveNumbersResponse")]
-        int[] sortFiveNumbers(int[] intArray);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAssignment1Service/sortFiveNumbersAsc", ReplyAction="http://tempuri.org/IAssignment1Service/sortFiveNumbersAscResponse")]
+        int[] sortFiveNumbersAsc(int[] intArray);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAssignment1Service/sortFiveNumbers", ReplyAction="http://tempuri.org/IAssignment1Service/sortFiveNumbersResponse")]
-        System.Threading.Tasks.Task<int[]> sortFiveNumbersAsync(int[] intArray);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAssignment1Service/sortFiveNumbersAsc", ReplyAction="http://tempuri.org/IAssignment1Service/sortFiveNumbersAscResponse")]
+        System.Threading.Tasks.Task<int[]> sortFiveNumbersAscAsync(int[] intArray);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAssignment1Service/sortFiveNumbersDesc", ReplyAction="http://tempuri.org/IAssignment1Service/sortFiveNumbersDescResponse")]
+        int[] sortFiveNumbersDesc(int[] intArray);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAssignment1Service/sortFiveNumbersDesc", ReplyAction="http://tempuri.org/IAssignment1Service/sortFiveNumbersDescResponse")]
+        System.Threading.Tasks.Task<int[]> sortFiveNumbersDescAsync(int[] intArray);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -97,20 +103,28 @@ namespace Assignment1Client.ServiceReference1 {
             return base.Channel.reverseStringAsync(word);
         }
         
-        public string printHtml(string string1) {
-            return base.Channel.printHtml(string1);
+        public string printHtml(string string1, string tag) {
+            return base.Channel.printHtml(string1, tag);
         }
         
-        public System.Threading.Tasks.Task<string> printHtmlAsync(string string1) {
-            return base.Channel.printHtmlAsync(string1);
+        public System.Threading.Tasks.Task<string> printHtmlAsync(string string1, string tag) {
+            return base.Channel.printHtmlAsync(string1, tag);
         }
         
-        public int[] sortFiveNumbers(int[] intArray) {
-            return base.Channel.sortFiveNumbers(intArray);
+        public int[] sortFiveNumbersAsc(int[] intArray) {
+            return base.Channel.sortFiveNumbersAsc(intArray);
         }
         
-        public System.Threading.Tasks.Task<int[]> sortFiveNumbersAsync(int[] intArray) {
-            return base.Channel.sortFiveNumbersAsync(intArray);
+        public System.Threading.Tasks.Task<int[]> sortFiveNumbersAscAsync(int[] intArray) {
+            return base.Channel.sortFiveNumbersAscAsync(intArray);
+        }
+        
+        public int[] sortFiveNumbersDesc(int[] intArray) {
+            return base.Channel.sortFiveNumbersDesc(intArray);
+        }
+        
+        public System.Threading.Tasks.Task<int[]> sortFiveNumbersDescAsync(int[] intArray) {
+            return base.Channel.sortFiveNumbersDescAsync(intArray);
         }
     }
 }

@@ -19,9 +19,11 @@ namespace Assignment1
         [OperationContract]
         string reverseString(string word);
         [OperationContract]
-        string printHtml(string string1);
+        string printHtml(string string1, string tag);
         [OperationContract]
-        int[] sortFiveNumbers(int[] intArray);
+        int[] sortFiveNumbersAsc(int[] intArray);
+        [OperationContract]
+        int[] sortFiveNumbersDesc(int[] intArray);
 
     }
 }
