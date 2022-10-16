@@ -70,7 +70,8 @@ namespace Assignment1
 
         public int[] sortFiveNumbersDesc(int[] intArray)
         {
-            Array.Reverse(intArray);
+            Array.Sort<int>(intArray, new Comparison<int>(
+                  (i1, i2) => i2.CompareTo(i1)));
             return intArray;
         }
 

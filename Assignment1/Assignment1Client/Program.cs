@@ -33,7 +33,7 @@ namespace Assignment1Client
                         int n = int.Parse(Console.ReadLine());
 
                         string result = service.primeCheck(n);
-                        Console.WriteLine(result);
+                        Console.WriteLine("Result: " + result);
 
                         break;
                     case "2":
@@ -41,14 +41,14 @@ namespace Assignment1Client
                         n = int.Parse(Console.ReadLine());
 
                         int result2 = service.sumOfDigits(n);
-                        Console.WriteLine(result2);
+                        Console.WriteLine("Sum of Digits: " + result2);
                         break;
                     case "3":
                         Console.WriteLine("\nEnter a string to reverse it: ");
                         string n2 = Console.ReadLine();
 
                         string result3 = service.reverseString(n2);
-                        Console.WriteLine(result3);
+                        Console.WriteLine("Reversed string: " + result3);
                         break;
                     case "4":
                         Console.WriteLine("\nEnter Tag: ");
@@ -56,7 +56,7 @@ namespace Assignment1Client
                         Console.WriteLine("\nEnter String: ");
                         string string1 = Console.ReadLine();
                         string result4 = service.printHtml(string1, tag);
-                        Console.WriteLine(result4);
+                        Console.WriteLine("Tag added: " + result4);
                         break;
                     case "5":
                         bool loop = true;
@@ -110,8 +110,7 @@ namespace Assignment1Client
                                 Console.WriteLine("\nEnter Asc or Desc, Any other word not accepted!");
                                 loop = true;
                             }
-                        }
-                                                
+                        }                                              
                         break;
                     case "6":
                         break;
