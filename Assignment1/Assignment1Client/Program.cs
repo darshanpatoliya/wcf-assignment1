@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -34,20 +35,19 @@ namespace Assignment1Client
 
                         string result = service.primeCheck(n);
                         Console.WriteLine("Result: " + result);
-
                         break;
                     case "2":
                         Console.WriteLine("\nEnter any digits to do a sum of them: ");
-                        n = int.Parse(Console.ReadLine());
+                        int n2 = int.Parse(Console.ReadLine());
 
-                        int result2 = service.sumOfDigits(n);
+                        int result2 = service.sumOfDigits(n2);
                         Console.WriteLine("Sum of Digits: " + result2);
                         break;
                     case "3":
                         Console.WriteLine("\nEnter a string to reverse it: ");
-                        string n2 = Console.ReadLine();
+                        string n3 = Console.ReadLine();
 
-                        string result3 = service.reverseString(n2);
+                        string result3 = service.reverseString(n3);
                         Console.WriteLine("Reversed string: " + result3);
                         break;
                     case "4":
@@ -83,7 +83,7 @@ namespace Assignment1Client
                                 {
                                     Console.Write(resultArray[i] + " ");
                                 }
-                                loop= false;
+                                loop = false;
                             }
                             else if (SortType == "Desc")
                             {
@@ -110,7 +110,7 @@ namespace Assignment1Client
                                 Console.WriteLine("\nEnter Asc or Desc, Any other word not accepted!");
                                 loop = true;
                             }
-                        }                                              
+                        }
                         break;
                     case "6":
                         break;
